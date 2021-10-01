@@ -82,6 +82,18 @@
 @import "vendor/jstree/style";
 
 // remove blue accessibility border
-a:-webkit-any-link:focus {
-  outline: none !important;
+a, a:visited { outline: none; border: none; }
+a:hover,
+a:active,
+a:focus {
+  /*Edit at will*/
+  background: --color-primary;  
+}
+
+button, button:visited { outline: none; }
+button:hover,
+button:active,
+button:focus {
+  /*Edit at will*/
+  background: #ccc;  
 }
